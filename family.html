@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <title>My family</title>
+    </head>
+    <body>
+        <span id="all_menu_buttons">
+            <button class="btn btn-danger" id="home_page" onclick="home_page()" style="color: rgb(255, 174, 0; border: brown; height:18 ;">Home Page</button>
+            <button class="btn btn-danger" id="My_routine" onclick="My_routine()" style="color: rgb(255, 174, 0; border: brown; height:18 ;">My routine</button>
+            <button class="btn btn-danger" id="my_aim" onclick="learnings()" style="color: rgb(255, 174, 0; border: brown; height:18 ;">Learnings</button>
+            <button class="btn btn-danger" id="my_family" onclick="my_family()" style="color: rgb(255, 174, 0; border: brown; height:18 ;">My Family</button>
+        </span>
+        <center>
+            <h1 id="my_family_heading">
+                My family Book
+            </h1>
+            <br>
+            <img src="https://i.postimg.cc/MKdhy06Z/family.jpg" id="my_family_img" width="250" height="300">
+            <h3 id="Names_h3">My family</h3>
+            <button id="next_btn" onclick="update()">Next</button>
+            <br>
+            <p>This was a family Book, if you click next, you will see members of my family.</p>
+            <p>Hello everyone, In this part of my website, I will tell you all about my family members, so let's begin.</p>
+            <h3>Maternal side</h3>
+            <p>In my maternal side, I have 3 cousins. My mom has 3 sisters, I is older than her and 1 is younger than her. The oldest kid in my maternal
+                side is my elder brothe, he is 15 years old. The smallest is my cousin sister who is just 3 years old. The second oldest is my brother Mukunda.
+                After that it's me, I am the 3rd oldest. The 2nd smallest is is my cousin sister, Dhruthi, and the smallest is dhruvi. My mom is the middle child
+                in my maternal side. The sister elder than my mom's name is Vishnu and the younger sister's name is Poori. We came to hyderad bad once in the years
+                2021(august) we lived there, for 15 day there and we had so much fun. Everyone gathere in my maternal grandmother's house, everyone in maternal
+                family was there, my dad had work, he didn't have work from hom, so he just came for his birthday and he left in 2-3 days.
+            </p>
+            <h3>Paternal side</h3>
+            <p>In the paternal side, the scenario is completely different, I am the smallest in the paternal side. I have 4 cousins in the paternal side.
+                My father has 1 brother and one sister, he is the smallest one, the brother is the eldest, and his sister is in the middle. I have 2 cousin sisters
+                and 2 cousin brothers, botha re in college, the eldest one is in london, he is studying there. My elder sibling(Koushik) is the second smallest everyone in 
+                my paternal side lives in hyderabad, but in my maternal side, I live in Delhi my mom's younger sis lives in america and the elder one lives in 
+                Chennai. But no matter it's maternal or Paternal, Ilove my family.
+
+            </p>
+            <h3>Gallery</h3>
+            <img src="Photo_1.jpg">
+            <img src="Photo_2.jpg">
+            <img src="photo_3.jpg">
+            <img src="Photo_4.jpg">
+            <img src="amma_acchuta.jpeg">
+            <img src="amma_acchuta_2.jpeg">
+            <img src="Kaushal acchuta.jpg">
+            <h6>These were some photos, I didn't have many but I uploaded as many as I could. Bye!!!</h6>
+        </center>
+    </body>
+</html>
+<script>
+    images=["https://i.postimg.cc/MKdhy06Z/family.jpg","nanna pic.jpg","Mom pic.jpg","Koushik image.jpg","KAUSHAL 2.jpg"]
+    names=["My family","Raja Mohan(Dad)","Vaishnavi(Mom)","Koushik(My elder brother)","Kaushal(me)"]
+
+    var i= 0;
+    function update(){
+        i++
+        var array_length=4;
+    updated_images= images[i];
+    updated_names= names[i]
+
+    
+    if (i> array_length){
+        i=1
+    }
+
+    document.getElementById("my_family_img").src= updated_images;
+    document.getElementById("Names_h3").innerHTML= updated_names;
+    }
+
+    if (i> array_length){
+        i=1
+    }
+
+    
+function home_page(){
+    window.location="index.html"
+}
+
+function My_routine(){
+    window.location="routine.html"
+}
+
+function learnings(){
+    window.location="learnings.html"
+}
+
+function my_family(){
+    window.location="family.html"
+} 
+   
+</script>
+<style>
+body{
+    background-color: darkseagreen;
+
+}
+#my_family_heading{
+    font-family: 'Times New Roman', Times, serif;
+    color: darkslateblue;
+}
+img{
+    width: 500;
+    height: 450;
+    border-color: deeppink;
+    border: ridge;
+    border-width: 6;
+}
+</style>
